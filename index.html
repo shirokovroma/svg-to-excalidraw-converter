@@ -10,6 +10,10 @@
             font-display: swap;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         html {
             height: 100%;
             width: 100%;
@@ -54,16 +58,18 @@
             justify-content: center;
             height: 100%;
             width: 100%;
-            border: 2px dashed #ccc;
             border-radius: 5px;
+            border: 2px dashed #ccc;
             font-size: 1.2rem;
             color: #ccc;
             cursor: pointer;
         }
+
         label:hover {
             border-color: #aaa;
             background-color: aliceblue;
         }
+
         footer {
             display: flex;
             justify-content: center;
@@ -71,17 +77,20 @@
             padding: 0.5rem;
             background-color: #f8f9fa;
         }
-        footer >a{
+
+        footer>a {
             display: block;
         }
+
         footer a img:hover {
             filter: invert(1) hue-rotate(180deg) contrast(1.45);
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>svg to excalidraw converter</h1> 
+        <h1>svg to excalidraw converter</h1>
     </header>
     <label>
         <span id="text">Drag and drop your svg file here <br>or click to select file</span>
@@ -89,9 +98,11 @@
     </label>
     <footer>
         <a href="https://github.com/twopm/svg-to-excalidraw-converter">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" height="30" alt="github">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" height="30"
+                alt="github">
         </a>
     </footer>
     <script src="dist/bundle.js"></script>
 </body>
+
 </html>
